@@ -5,7 +5,6 @@
 unsigned int faStr1(const char *str) {
     enum States { findWord, correctWord, incorrectWord } state = findWord;
     int count = 0;
-    
     for (int i = 0; str[i] != '\0'; i++) {
         switch (state) {
         case findWord:
@@ -38,7 +37,6 @@ unsigned int faStr1(const char *str) {
 unsigned int faStr2(const char *str) {
     enum States { findWord, correctWord, incorrectWord } state = findWord;
     int count = 0;
-    
     for (int i = 0; str[i] != '\0'; i++) {
         switch (state) {
         case findWord:
@@ -71,7 +69,6 @@ unsigned int faStr2(const char *str) {
 unsigned int faStr3(const char *str) {
     enum States { findWord, checkWord } state = findWord;
     int wordsCount = 0, sumLength = 0;
-    
     for (int i = 0; str[i] != '\0'; i++) {
         switch (state) {
         case findWord:
