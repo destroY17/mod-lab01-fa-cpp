@@ -1,5 +1,6 @@
 // Copyright 2022 UNN-IASR
 #include "fun.h"
+#include <math.h>
 
 unsigned int faStr1(const char *str) {
     enum States { findWord, correctWord, incorrectWord } state = findWord;
@@ -37,7 +38,7 @@ unsigned int faStr1(const char *str) {
 unsigned int faStr2(const char *str) {
     enum States { findWord, correctWord, incorrectWord } state = findWord;
     int count = 0;
-
+    
     for (int i = 0; str[i] != '\0'; i++) {
         switch (state) {
         case findWord:
